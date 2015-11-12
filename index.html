@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html ng-app="mainApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>INDEX</title>
+	
+	<!--css bs-->
+    <link href="assets/css/bs-css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--ajs-->
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-route.min.js"></script>
+
+    <!--bs-js-->
+    <!--script src="assets/js/bs-js/bootstrap.min.js"></script-->
+
+    <!--mod css -->
+    <link href="assets/css/index.css" rel="stylesheet" />
+
+    <!--metas-->
+</head>
+<body>
+	<nav class="m-nav">
+	<div class="container">
+		<div class="nav pull-left">
+			<pre>successWorld</pre>
+		</div>
+		<ul class="nav nav-tabs pull-right">
+			<li><a href="#/">Home</a></li>
+			<li><a href="#/page1">Page1</a></li>
+			<li><a href="#/page2">page2</a></li>
+		</ul>
+	</div>
+	</nav>
+
+	<div class="jumbotron">
+		<div class="container">
+			<ng-view></ng-view>
+		</div>
+	</div>
+    <script src="app/index/mainApp.js"></script>
+</body>
+</html>
